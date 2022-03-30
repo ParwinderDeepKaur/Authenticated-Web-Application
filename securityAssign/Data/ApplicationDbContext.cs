@@ -13,7 +13,7 @@ namespace securityAssign.Data
         public ApplicationDbContext()
         {
             var path = Environment.CurrentDirectory;
-            DbPath = $"{path}{System.IO.Path.DirectorySeparatorChar}ToDoLists.db";
+            DbPath = $"{path}{System.IO.Path.DirectorySeparatorChar}securDB.db";
         }
 
         // The following configures EF to create a Sqlite database file in the

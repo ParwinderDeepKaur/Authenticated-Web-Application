@@ -54,6 +54,7 @@ namespace securityAssign
             app.UseStaticFiles();
 
             app.UseRouting();
+           
 
             app.UseAuthentication();
             app.UseAuthorization();
@@ -61,6 +62,8 @@ namespace securityAssign
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
+                //Configuring the MVC middleware to the request processing pipeline
+                endpoints.MapDefaultControllerRoute();
             });
         }
     }

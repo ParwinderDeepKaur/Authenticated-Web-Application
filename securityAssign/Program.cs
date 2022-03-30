@@ -26,6 +26,7 @@ namespace securityAssign
                         client.Database.EnsureCreated();
                     }
                     webBuilder.UseStartup<Startup>();
+
                 });
     }
 }
